@@ -5,15 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
     el: "#app",
     data: {
       todos:[
-        "Buy Shopping", "Clean Bathroom", "MOT"
+        {name: "Buy Shopping", priority: "High"},
+        {name: "Clean Bathroom", priority: "Low"},
+        {name: "MOT", priority: "High"}
       ],
       newTask: ""
     },
     methods: {
       saveNewTask : function (){
-        let newTask = this.newTask
-        this.todos.push(newTask)
-        this.newTask= ""
+        let taskObject = {name: this.newTask, priority: this.priority.value  }
+        this.todos.push(taskObject)
+        this.newTask = ""
       }
 
 

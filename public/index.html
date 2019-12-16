@@ -13,14 +13,23 @@
   <div id="app">
     <ul>
       <li v-for="task in todos">
-        <span>{{task}}</span>
-        <!-- <button>Mark as Done.</button> -->
+        <span>{{task.name}}</span>
+        <span>Priority: {{task.priority}}</span>
+        <button>Mark as Done.</button>
       </li>
     </ul>
     <form v-on:submit.prevent="saveNewTask">
       <label for="new-task">Add a new task:</label>
       <input v-model="newTask" type="text" id="new-task"/>
       <input type="submit" value="Add to list"/>
+
+      <div id="radio">
+        <input type="radio" name="choosePriority" id="highPriority" value="High Priority">
+        <label for="highPriority">High Priority</label>
+
+        <input type="radio" name="choosePriority" id="lowPriority" value="Low Priority">
+        <label for="lowPriority">Low Priority</label>
+      </div>
     </form>
   </div>
 </body>
