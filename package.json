@@ -1,0 +1,27 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulmcmanus2021/w7d1hw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulmcmanus2021/w7d1hw/issues"
+  },
+  "homepage": "https://github.com/paulmcmanus2021/w7d1hw#readme",
+  "dependencies": {
+    "vue": "^2.6.11",
+    "webpack": "^4.41.3"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.10"
+  }
+}
