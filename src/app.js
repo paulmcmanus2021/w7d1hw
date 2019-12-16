@@ -6,7 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
     data: {
       todos:[
         "Buy Shopping", "Clean Bathroom", "MOT"
-      ]
+      ],
+      newTask: ""
+    },
+    methods: {
+      saveNewTask : function (){
+        let newTask = this.newTask
+        this.todos.push(newTask)
+        this.newTask= ""
+      }
+
+
     }
   })
 })
