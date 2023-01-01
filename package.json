@@ -19,9 +19,9 @@
   "homepage": "https://github.com/paulmcmanus2021/w7d1hw#readme",
   "dependencies": {
     "vue": "^2.6.11",
-    "webpack": "^4.41.3"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^5.0.1"
   }
 }
